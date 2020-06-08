@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body,
+html {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/background.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F6F6F7;
+}
+
+/* navbar */
+
+header {
+}
+
+header nav {
+  margin: 70px 200px;
+}
+
+header nav h1 {
+  font-size: xx-large;
+  display: inline-block;
+  float: left;
+  color: #090909;
+}
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header nav ul li {
+  display: inline;
+  float: right;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: small;
+  color: #636466;
+}
+
+header nav ul li a:hover {
+  color: #f16079;
+}
+
+header nav ul li button {
+  margin: 15px 0;
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #b34592;
+  color: #feeeee;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+header nav ul li button:hover,
+header nav ul li button:focus {
+  background: #b34592;
+  color: #feeeee;
+}
+
+header nav ul li button:focus {
+  outline: 1px solid #feeeee;
+  outline-offset: -4px;
+}
+
+header nav ul li button:active {
+  transform: scale(0.99);
+}
+header nav ul li button span {
+  display: none;
+  border: 1px solid #feeeee;
+  border-radius: 25px;
+  padding: 4px;
+}
+
+header nav ul li p {
+  display: none;
+  margin-left: 30px;
+  color: #636466;
+}
+
+header nav ul li p span {
+  color: #b34592;
+}
+
+main {
+  margin: 100px 200px;
+}
+
+/* About me Section */
+
+.about-header {
+  font-size: 2.5rem;
+}
+
+.about-paragraph {
+  font-size: 1.2rem;
+  width: 35rem;
+  line-height: 25px;
+}
+
+/* Image Aside */
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Personal Image */
+.image-cropper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 105%;
+  width: auto;
+}
+
+.flex-icons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.flex-icons {
+  display: flex;
+  flex-direction: column;
+}
+.flex-box i {
+  font-size: 3rem;
+  margin-top: 7px;
+  color: #ccc;
+}
