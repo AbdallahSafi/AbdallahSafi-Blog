@@ -8,7 +8,7 @@ html {
 
 .bg {
   /* The image used */
-  background-image: url("../img/background.png");
+  background-image: url("../img/background-02.png");
 
   /* Full height */
   height: 100%;
@@ -17,7 +17,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #f6f6f7;
+  background-color: #FFFFFF;
 }
 
 /* navbar */
