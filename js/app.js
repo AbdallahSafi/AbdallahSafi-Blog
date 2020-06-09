@@ -29,12 +29,14 @@ question5();
 // }
 
 // 5 yes or no Questions
+var nca = 0; //counter for the number of correct answer
 
 function question1(){
   var q1 = 'Am I a male ?';
   var a = prompt(q1).toLowerCase();
   if ( a === 'yes' || a === 'y') {
     alert('You guessed it right');
+    nca = nca + 1;
     //   console.log('You guessed it right');
   } else if(a === 'no' || a === 'n') {
     alert('Wrong!');
@@ -50,6 +52,7 @@ function question2(){
   var a = prompt(q2).toLowerCase();
   if ( a === 'yes' || a === 'y') {
     alert('You are correct! that is why I studied mathematics at university');
+    nca = nca + 1;
     //   console.log('You are correct! that is why I studied mathematics at university');
   } else if(a === 'no' || a === 'n') {
     alert('Wrong! actually I love math and I studied mathematics at university');
@@ -65,6 +68,7 @@ function question3(){
   var a = prompt(q3).toLowerCase();
   if ( a === 'yes' || a === 'y') {
     alert('You are correct! I worked as a graphic designer and UI/UX designer');
+    nca = nca + 1;
     //   console.log('You are correct! I worked as a graphic designer and UI/UX designer');
   } else if(a === 'no' || a === 'n') {
     alert('Wrong! actually I worked as a graphic designer and UI/UX designer');
@@ -83,6 +87,7 @@ function question4(){
     //   console.log('Wrong! I did not study graphic design, but it was a hobby, but in addition to mathematics, I studied computer engineering');
   } else if(a === 'no' || a === 'n') {
     alert('You are correct! but in addition to mathematics, I studied computer engineering');
+    nca = nca + 1;
     //   console.log('You are correct! but in addition to mathematics, I studied computer engineering'');
   } else {
     alert('You should answer with y/n or yes/no only');
@@ -95,6 +100,7 @@ function question5(){
   var a = prompt(q5).toLowerCase();
   if ( a === 'yes' || a === 'y') {
     alert('Sure! it makes sense and I am now full time web developer');
+    nca = nca + 1;
     //   console.log('Sure! it makes sense and I am now full time web developer');
   } else if(a === 'no' || a === 'n') {
     alert('You guessed it wrong! I am now full time web developer');
@@ -105,9 +111,7 @@ function question5(){
   }
 }
 
-//   6 numeric Questions
-
-var nca = 0; //counter for the number of correct answer
+//   6th numeric Questions
 // function question6(){
 var q = 'How old I am ?';
 var attemps = 0;
@@ -152,225 +156,6 @@ while(attemps < 4){
 
 // }
 
-
-
-// function question7(){
-q = 'I am now married. How many years do you think I was married?';
-attemps = 0;
-while(attemps < 4){
-  a = Number(prompt(q));
-  // console.log(a);
-  switch (true) {
-  case (a === 3):
-    alert('You guessed it right!');
-    nca= nca + 1;
-    // console.log('right');
-    break;
-  case (a > 3):
-    // console.log('high');
-    attemps = attemps + 1;
-    alert('oobs! too high. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (0 < a && a < 3):
-    // console.log('low');
-    attemps+=1;
-    alert('oobs! too low. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (a === 0):
-    // console.log('not valid');
-    attemps+=1;
-    alert('You should add a valid number. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-
-  default:
-    // console.log('default');
-    break;
-  }
-  if (a === 3) {
-    break;
-  }else if(attemps === 4){
-    alert('Sorry, You had four tries. The right answer is 3');
-  }
-}
-// }
-
-
-
-// function question8(){
-q = 'I have been married for 3 years. How many sons do you think I have ?';
-attemps = 0;
-while(attemps < 4){
-  a = Number(prompt(q));
-  // console.log(a);
-  switch (true) {
-  case (a === 1):
-    alert('You guessed it right!');
-    nca= nca + 1;
-    // console.log('right');
-    break;
-  case (a > 1):
-    // console.log('high');
-    attemps = attemps + 1;
-    alert('oobs! too high. You have '+(4-attemps)+' tries left');
-    console.log(attemps);
-    break;
-  case (0 < a && a < 1):
-    // console.log('low');
-    attemps+=1;
-    alert('oobs! too low. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (a === 0):
-    // console.log('not valid');
-    attemps+=1;
-    alert('You should add a valid number. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  default:
-    // console.log('default');
-    break;
-  }
-  if (a === 1) {
-    break;
-  }else if(attemps === 4){
-    alert('Sorry, You had four tries. The right answer is 1');
-
-  }
-}
-
-
-
-// function question9(){
-q = 'What do you think are the total years spent in school in addition to higher education so far?';
-attemps = 0;
-while(attemps < 4){
-  a = Number(prompt(q));
-  // console.log(a);
-  switch (true) {
-  case (a === 19):
-    alert('You guessed it right!');
-    nca= nca + 1;
-    // console.log('right');
-    break;
-  case (a > 19):
-    // console.log('high');
-    attemps = attemps + 1;
-    alert('oobs! too high. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (0 < a && a < 19):
-    // console.log('low');
-    attemps+=1;
-    alert('oobs! too low. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (a === 0):
-    // console.log('not valid');
-    attemps+=1;
-    alert('You should add a valid number. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  default:
-    // console.log('default');
-    break;
-  }
-  if (a === 19) {
-    break;
-  }else if(attemps === 4){
-    alert('Sorry, You had four tries. The right answer is 19');
-  }
-}
-// }
-
-
-
-// function question10(){
-q = 'What do you think of the number of countries that I visited??';
-attemps = 0;
-while(attemps < 4){
-  a = Number(prompt(q));
-  // console.log(a);
-  switch (true) {
-  case (a === 2):
-    alert('You guessed it right!');
-    nca= nca + 1;
-    // console.log('right');
-    break;
-  case (a > 2):
-    // console.log('high');
-    attemps = attemps + 1;
-    alert('oobs! too high. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (0 < a && a < 2):
-    // console.log('low');
-    attemps+=1;
-    alert('oobs! too low. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (a === 0):
-    // console.log('not valid');
-    attemps+=1;
-    alert('You should add a valid number. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  default:
-    // console.log('default');
-    break;
-  }
-  if (a === 2) {
-    break;
-  }else if(attemps === 4){
-    alert('Sorry, You had four tries. The right answer is 2');
-  }
-}
-// }
-
-
-// function question11(){
-q = 'Based on what you know about me so far. In your opinion, how many jobs have I worked in previously?';
-attemps = 0;
-while(attemps < 4){
-  a = Number(prompt(q));
-  // console.log(a);
-  switch (true) {
-  case (a === 3):
-    alert('You guessed it right!');
-    nca= nca + 1;
-    // console.log('right');
-    break;
-  case (a > 3):
-    // console.log('high');
-    attemps = attemps + 1;
-    alert('oobs! too high. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (0 < a && a < 3):
-    // console.log('low');
-    attemps+=1;
-    alert('oobs! too low. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (a === 0):
-    // console.log('not valid');
-    attemps+=1;
-    alert('You should add a valid number. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  default:
-    // console.log('default');
-    break;
-  }
-  if (a === 3) {
-    break;
-  }else if(attemps === 4){
-    alert('Sorry, You had four tries. The right answer is 3');
-  }
-}
-// }
 
 // the 7th question
 var cars =[ 'bmw', 'fiat', 'kia'];
