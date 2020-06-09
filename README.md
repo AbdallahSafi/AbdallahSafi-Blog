@@ -27,10 +27,10 @@ These instructions will get you a copy of the project up and running on your loc
 - Operating system: Mac OS, Windows, Linux
 - Git
 Follow the instruction in the links below to install git in your machine
-  - ![Windows](https://git-scm.com/download/win)
-  - ![Mac OS](https://git-scm.com/download/mac)
-  - ![Linux](https://git-scm.com/download/linux)
-- ![Codeing Editor](https://www.wpbeginner.com/showcase/12-best-code-editors-for-mac-and-windows-for-editing-wordpress-files/)
+  - [Windows](https://git-scm.com/download/win)
+  - [Mac OS](https://git-scm.com/download/mac)
+  - [Linux](https://git-scm.com/download/linux)
+- [Codeing Editor](https://www.wpbeginner.com/showcase/12-best-code-editors-for-mac-and-windows-for-editing-wordpress-files/)
 
 # Installation
 
@@ -85,7 +85,7 @@ Contributions are what make the open source community such an amazing place to b
 
 # License
 
-Distributed under the MIT License. See ![LICENSE](https://www.mit.edu/~amini/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://www.mit.edu/~amini/LICENSE.md) for more information.
 
 # Contact
 
