@@ -15,6 +15,8 @@ alert('Hello, ' + Gistname + '. I hope you enjoy your time here');
 // alert('Welcome a gain ' +Gistname);
 // }
 
+var nca = 0; //counter for the number of correct answer
+
 // function guessGame() {
 alert('Before I let you enter my website, We will play a guessing game and you should answer with y/n or yes/no for the first 5 question.\n \n let us get started');
 question1();
@@ -29,7 +31,6 @@ question5();
 // }
 
 // 5 yes or no Questions
-var nca = 0; //counter for the number of correct answer
 
 function question1(){
   var q1 = 'Am I a male ?';
