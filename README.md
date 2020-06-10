@@ -72,6 +72,10 @@ function question1(){
 
  *Note*: There is five functions for five question you can repeat this as many times as you wish.
 
+ # New Feature
+
+ I added new type of questions to the guessing game.
+
  # Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
