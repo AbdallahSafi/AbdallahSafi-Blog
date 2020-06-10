@@ -24,8 +24,8 @@ question2();
 question3();
 question4();
 question5();
-// question6();
-// question7();
+question6();
+question7();
 // question8();
 // question9();
 // }
@@ -113,7 +113,7 @@ function question5(){
 }
 
 //   6th numeric Questions
-// function question6(){
+function question6(){
 var q = 'How old I am ?';
 var attemps = 0;
 while(attemps < 4){
@@ -155,10 +155,11 @@ while(attemps < 4){
   }
 }
 
-// }
+}
 
 
 // the 7th question
+function question7(){
 var cars =[ 'bmw', 'fiat', 'kia'];
 var correct = false;
 var att = 6;
@@ -183,7 +184,7 @@ for( var d = 0; d<cars.length; d++){
   liked = liked +'-'+cars[d];
 }
 alert('Car models that I like are '+'('+ liked +')' );
-
+}
 alert('Total Correct answers is: '+ nca);
 
 alert('Welcome a gain ' +Gistname);
