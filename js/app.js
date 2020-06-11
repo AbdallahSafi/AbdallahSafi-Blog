@@ -2,6 +2,8 @@
 
 // welcome();
 
+// hisham was here :P
+
 // function welcome() {
 var Gistname = prompt('Enter Your Name', 'Guest');
 var nameElement = document.getElementById('name');
