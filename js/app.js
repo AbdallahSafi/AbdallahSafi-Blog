@@ -1,8 +1,7 @@
 'use strict;';
 
 // welcome();
-
-function welcome() {
+// function welcome() {
 var Gistname = prompt('Enter Your Name', 'Guest');
 var nameElement = document.getElementById('name');
 var welcom = document.getElementById('welcom');
