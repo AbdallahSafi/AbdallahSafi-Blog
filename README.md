@@ -70,7 +70,10 @@ function ynQuestionBody(arrData) {
 }
 ```
 
-- `q1` where you put your first question
+- `index 0` where you put your question
+- `index 1` where you put response to correct answer
+- `index 2` where you put response to wrong answer
+- `index 3` put your correct answer to compare to it
 - The alerts where you put your responses
 
 _Note_: There is five functions for five question you can repeat this as many times as you wish.
