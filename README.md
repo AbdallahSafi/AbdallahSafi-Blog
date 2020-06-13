@@ -8,7 +8,8 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage) \*[New Feature](#New-Feature)
+- [Usage](#usage) 
+- [New Feature](#New-Feature)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -83,45 +84,36 @@ This question accepts a numeric input and the user have 4 attemps to guess the r
 see the code
 
 ```javascript
-var q = 'How old I am ?';
-var attemps = 0;
-while(attemps < 4){
-  var a = Number(prompt(q));
-  // console.log(a);
-  switch (true) {
-  case (a === 29):
-    alert('You guessed it right!');
-    nca= nca + 1;
-    // console.log('right');
-    break;
-  case (a > 29):
-    // console.log('high');
-    attemps = attemps + 1;
-    alert('oobs! too high. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (0 < a && a < 29):
-    // console.log('low');
-    attemps+=1;
-    alert('oobs! too low. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-  case (a === 0 || isNaN(a)):
-    // console.log('not valid');
-    attemps+=1;
-    alert('You should add a valid number. You have '+(4-attemps)+' tries left');
-    // console.log(attemps);
-    break;
-
-  default:
-    // console.log('default');
-    break;
+//6th numeric Questions
+function question6() {
+  var q = 'How old I am ?';
+  var attemps = 0;
+  var correct = 0;
+  while (attemps < 4) {
+    var a = Number(prompt(q));
+    if( a === 29){
+      correct = 1;
+      alert('You guessed it right!');
+      break;
+    }else if(a > 29 ){
+      attemps = attemps + 1;
+      alert('oobs! too high. You have ' + (4 - attemps) + ' tries left');
+    }else if(a >0 && a < 29){
+      attemps += 1;
+      alert('oobs! too low. You have ' + (4 - attemps) + ' tries left');
+    }else {
+      attemps = attemps + 1;
+      alert(
+        'You should add a valid number. You have ' +
+            (4 - attemps) +
+            ' tries left'
+      );
+    }
   }
-  if (a === 29) {
-    break;
-  }else if(attemps === 4){
+  if(attemps === 4){
     alert('Sorry, You had four tries. The right answer is 29');
   }
+  return correct;
 }
 ```
 
@@ -130,30 +122,43 @@ while(attemps < 4){
 This question is about guessing a the correct answer from a multiple correct answers and the user have 6 attemps to get the correct answer.
 
 ```javascript
-var cars =[ 'bmw', 'fiat', 'kia'];
-var correct = false;
-var att = 6;
-while(!correct && att > 0){
-  q = 'What car models do you think I like the most ?';
-  a = prompt(q).toLowerCase();
-  for(var i = 0; i < cars.length; i++){
-    if (a === cars[i]){
-      correct = true;
-      alert('Correct answer!');
-      nca= nca + 1;
-      // console.log('correct');
+v//the 7th question
+function question7() {
+  var cars = ['bmw', 'fiat', 'kia'];
+  var correct = false;
+  var att = 6;
+  var numOfcorrect = 0;
+  while (!correct && att > 0) {
+    var q = 'What car models do you think I like the most ?';
+    var a = prompt(q).toLowerCase();
+    for (var i = 0; i < cars.length; i++) {
+      if (a === cars[i]) {
+        correct = true;
+        alert('Correct answer!');
+        numOfcorrect = numOfcorrect + 1;
+        // console.log('correct');
+      }
+    }
+    if (!correct) {
+      att = att - 1;
+      alert('wrong answer, you have ' + att + ' tries left');
     }
   }
-  if(!correct){
-    att = att - 1;
-    alert('wrong answer, you have '+att+' tries left');
+
+
+  var liked = '';
+  for (var d = 0; d < cars.length; d++) {
+    if(d < cars.length-1){
+      liked = liked + cars[d] + ',';
+    }else{
+      liked = liked +cars[d];
+    }
+
   }
+  alert('Car models that I like are ' + '(' + liked + ')');
+  return numOfcorrect;
 }
-var liked ='';
-for( var d = 0; d<cars.length; d++){
-  liked = liked +'-'+cars[d];
-}
-alert('Car models that I like are '+'('+ liked +')' );
+
 ```
 
 # Contributing
