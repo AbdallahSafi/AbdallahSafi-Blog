@@ -76,7 +76,7 @@ function ynQuestionBody(arrData) {
 - `index 3` put your correct answer to compare to it
 - The alerts where you put your responses
 
-_Note_: There is five functions for five question you can repeat this as many times as you wish.
+_Note_: There is five questions in array you can add to it and run the perviuos function in the loop to generate the questions.
 
 # New Feature
 
