@@ -33,7 +33,7 @@ function guessGame() {
 
 // excute 5 yes or no questions
 function ynQuestion() {
-  // the data of the 5 questions
+  // the data that holds the questions and reponses of the 5 questions
   var questionData = [
     ['Am I a male ?', 'You guessed it right', 'Wrong!', 'yes'],
     [
@@ -61,6 +61,7 @@ function ynQuestion() {
       'yes'
     ],
   ];
+  //counting the correct answers
   var correctAnswers = 0;
   for (var i = 0; i < questionData.length; i++) {
     correctAnswers = correctAnswers + ynQuestionBody(questionData[i]);
