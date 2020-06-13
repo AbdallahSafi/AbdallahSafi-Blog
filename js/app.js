@@ -141,9 +141,16 @@ function question7() {
       alert('wrong answer, you have ' + att + ' tries left');
     }
   }
+
+
   var liked = '';
   for (var d = 0; d < cars.length; d++) {
-    liked = liked + '-' + cars[d];
+    if(d < cars.length-1){
+      liked = liked + cars[d] + ',';
+    }else{
+      liked = liked +cars[d];
+    }
+
   }
   alert('Car models that I like are ' + '(' + liked + ')');
   return numOfcorrect;

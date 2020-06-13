@@ -82,10 +82,10 @@ main {
 
 .about-header {
   font-size: 2.5rem;
-  color: #636466;
+  color: #59656F;
 }
 h3, h2, p {
-  color: #636466;
+  color: #59656F;
 }
 
 .about-paragraph {
@@ -137,3 +137,9 @@ img {
 .flex-box i:hover {
   color: #ec46a3;
 }
+
+a{
+  color: #ec46a3;
+  text-decoration: none;
+}
+
