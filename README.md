@@ -48,22 +48,25 @@ I added a guessing game to the blog so the visitor can guess who your through se
 
 # Code Example
 
-You can Change the questions and the answers based on your interest
+You can Change the questions and the answers based on your interest in the data array.
 
 ```javascript
-function question1() {
-  var q1 = "Am I a male ?";
-  var a = prompt(q1).toLowerCase();
-  if (a === "yes" || a === "y") {
-    alert("You guessed it right");
-    //   console.log('You guessed it right');
-  } else if (a === "no" || a === "n") {
-    alert("Wrong!");
-    //   console.log('Wrong!');
-  } else {
-    alert("You should answer with y/n or yes/no only");
-    question1();
+// this code will run through a loop tp genrate 5 different questions
+function ynQuestionBody(arrData) {
+  var a = prompt(arrData[0]).toLowerCase();
+  var correct = 0;
+  if(!(a === 'yes' || a === 'y' ||a === 'no' || a === 'n')){
+    alert('You should answer with y/n or yes/no only');
+    ynQuestionBody(arrData);
+    return correct;
   }
+  if (a === arrData[3] || a === arrData[3].charAt(0)) {
+    alert(arrData[1]);
+    correct = correct + 1;
+  } else {
+    alert(arrData[2]);
+  }
+  return correct;
 }
 ```
 
